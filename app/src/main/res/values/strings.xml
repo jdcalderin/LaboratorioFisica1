@@ -9,7 +9,7 @@
 
     <string name="calcTeorica">Calculo Teorico</string>
     <string name="radio">Ingresar radio</string>
-    <string name="priodo">Ingrese el periodo</string>
+    <string name="periodo">Ingrese el periodo</string>
     <string name="calcular">Calcular</string>
     <string name="velTeorica">Velocidad teorica</string>
     <string name="irMedExperimental">Ir a Medicion Experimental</string>
@@ -22,7 +22,6 @@
     <string name="errRelativo">Error relativo</string>
     <string name="expErrRelativo">Exprecion E.R</string>
     <string name="msgErrorRrelativo">El error relativo es:</string>
-
 
 
     <string name="title_activity_welcome">Home Screen</string>
@@ -44,6 +43,7 @@
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
+    <string name="title_activity__calc__teorica">Activity_Calc_Teorica</string>
 
 
 </resources>
