@@ -7,6 +7,23 @@
     <string name="energia">Energia</string>
     <string name="colisiones">Colisiones</string>
 
+    <string name="calcTeorica">Calculo Teorico</string>
+    <string name="radio">Ingresar radio</string>
+    <string name="priodo">Ingrese el periodo</string>
+    <string name="calcular">Calcular</string>
+    <string name="velTeorica">Velocidad teorica</string>
+    <string name="irMedExperimental">Ir a Medicion Experimental</string>
+    <string name="medExperimental">Velocidad experimental</string>
+    <string name="longObject">Longitud del objeto</string>
+    <string name="desLonObject">se ingrisa la longitud del objeto a medir</string>
+    <string name="tiempo">Tiempo</string>
+    <string name="velexperimental">Velocidad experimental</string>
+    <string name="irErrRelativo">ir a error relativo</string>
+    <string name="errRelativo">Error relativo</string>
+    <string name="expErrRelativo">Exprecion E.R</string>
+    <string name="msgErrorRrelativo">El error relativo es:</string>
+
+
 
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
