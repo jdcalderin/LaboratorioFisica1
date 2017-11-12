@@ -12,7 +12,7 @@
     <string name="periodo">Ingrese el periodo</string>
     <string name="calcular">Calcular</string>
     <string name="velTeorica">Velocidad teorica</string>
-    <string name="irMedExperimental">Ir a Medicion Experimental</string>
+    <string name="irMedExperimental">Ir a Medición Experimental</string>
     <string name="medExperimental">Velocidad experimental</string>
     <string name="longObject">Longitud del objeto</string>
     <string name="desLonObject">se ingrisa la longitud del objeto a medir</string>
@@ -30,7 +30,7 @@
     <string name="start">Vamos !</string>
 
     <string name="slide_1_title">MCU</string>
-    <string name="slide_1_desc"> * Modelado Teorico</string>
+    <string name="slide_1_desc"> * Modelo Teorico</string>
     <string name="slide_1_desc2">* Modelo Experimental</string>
     <string name="slide_1_desc3">* Error relativo</string>
 
@@ -42,8 +42,10 @@
     <string name="slide_3_desc">La expresión para calcular la rapidez en mov. Circular es:
 </string>
 
-    <string name="slide_4_title">Periodo</string>
+    <string name="slide_4_title">Periodo (p)</string>
+    <string name="slide_4_title2">Radio (r)</string>
     <string name="slide_4_desc">Tiempo que tarda el objeto en dar una vuelta</string>
+    <string name="slide_4_desc2">Medir el radio de la circunferencia descrita en el ejercicion</string>
 
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
