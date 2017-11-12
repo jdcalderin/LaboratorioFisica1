@@ -25,12 +25,14 @@
 
 
     <string name="title_activity_welcome">Home Screen</string>
-    <string name="next">NEXT</string>
-    <string name="skip">SKIP</string>
-    <string name="start">GOT IT</string>
+    <string name="next">Siguiente</string>
+    <string name="skip">Saltar</string>
+    <string name="start">Vamos !</string>
 
-    <string name="slide_1_title">Hello Food!</string>
-    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+    <string name="slide_1_title">MCU</string>
+    <string name="slide_1_desc"> * Modelado Teorico</string>
+    <string name="slide_1_desc2">* Modelo Experimental</string>
+    <string name="slide_1_desc3">* Error relativo</string>
 
     <string name="slide_2_title">Movie Tickets</string>
     <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
