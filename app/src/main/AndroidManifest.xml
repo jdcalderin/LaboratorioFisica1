@@ -23,6 +23,11 @@
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".Activity_Calc_Teorica"
+            android:label="@string/title_activity_result_teorico"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
             android:name=".Activity_result_teorico"
             android:label="@string/title_activity_result_teorico"
             android:theme="@style/AppTheme.NoActionBar"></activity>

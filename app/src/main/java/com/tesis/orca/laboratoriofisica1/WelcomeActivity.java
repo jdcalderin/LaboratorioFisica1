@@ -17,6 +17,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class WelcomeActivity extends AppCompatActivity {
 
@@ -115,7 +116,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(true);
-        startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+        startActivity(new Intent(WelcomeActivity.this,Activity_Calc_Teorica.class));
         finish();
     }
 
@@ -153,6 +154,8 @@ public class WelcomeActivity extends AppCompatActivity {
     /**
      * Making notification bar transparent
      */
+
+
 
 
     private void changeStatusBarColor() {
