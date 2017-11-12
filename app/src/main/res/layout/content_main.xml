@@ -17,9 +17,20 @@
 
         <ImageButton
             android:id="@+id/btnMCU"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="172dp"
+            android:layout_height="88dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/rotate64X64" />
+            app:srcCompat="@drawable/rotate64x64" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="172dp"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/rotate64x64"
+            tools:layout_editor_absoluteX="-73dp"
+            tools:layout_editor_absoluteY="-102dp" />
+
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
