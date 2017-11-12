@@ -9,28 +9,44 @@
     tools:showIn="@layout/activity_main">
 
     <LinearLayout
-        android:layout_width="344dp"
+        android:layout_width="368dp"
         android:layout_height="495dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-        <ImageButton
-            android:id="@+id/btnMCU"
-            android:layout_width="172dp"
-            android:layout_height="88dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/rotate64x64" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="172dp"
-            android:layout_height="86dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/rotate64x64"
-            tools:layout_editor_absoluteX="-73dp"
-            tools:layout_editor_absoluteY="-102dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
 
+            <Button
+                android:id="@+id/txtcinematica"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cinematica" />
+
+            <Button
+                android:id="@+id/btnmcu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/mcu" />
+
+            <Button
+                android:id="@+id/btnenergia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/energia" />
+
+            <Button
+                android:id="@+id/btncolisiones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/colisiones" />
+        </LinearLayout>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

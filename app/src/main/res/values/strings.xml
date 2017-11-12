@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Laboratorio Fisica 1</string>
     <string name="action_settings">Settings</string>
+
+    <string name="cinematica">Cinematica</string>
+    <string name="mcu">MCU</string>
+    <string name="energia">Energia</string>
+    <string name="colisiones">Colisiones</string>
 </resources>
