@@ -11,7 +11,8 @@ import android.widget.EditText;
 
 public class Activity_Calc_Teorica extends AppCompatActivity {
 
-    public static final String strValorRadio = "0";
+    public static final String strValorRadio = "1";
+    public static final String strValorPeriodo = "2";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +33,15 @@ public class Activity_Calc_Teorica extends AppCompatActivity {
 
     public void Ircalcular(View view) {
         Intent intent = new Intent(this, Activity_result_teorico.class);
+
         EditText etRadio = (EditText) findViewById(R.id.etRadio);
+        EditText etPeriodo = (EditText) findViewById(R.id.etPeriodo);
         String strRadio = etRadio.getText().toString();
+
+        String strPeriodo = etPeriodo.getText().toString();
         intent.putExtra(strValorRadio, strRadio);
+        intent.putExtra(strValorPeriodo, strPeriodo);
+
         startActivity(intent);
     }
 

@@ -24,7 +24,7 @@
             android:textSize="@dimen/titulos" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvRadio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
@@ -37,7 +37,7 @@
             app:srcCompat="@drawable/linea" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/tvPeriodo"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:text="p"
@@ -52,7 +52,7 @@
             android:textSize="@dimen/etiquetas" />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/tvResultado"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:textAlignment="center"

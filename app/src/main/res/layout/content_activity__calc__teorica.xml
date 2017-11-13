@@ -61,7 +61,8 @@
             android:id="@+id/btCalcular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="Ircalcular"
             android:text="@string/calcular"
-            android:textSize="@dimen/botones"/>
+            android:textSize="@dimen/botones" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
