@@ -10,6 +10,6 @@ tools:context="com.tesis.orca.laboratoriofisica1.SplashActivity" >
     android:layout_height="match_parent"
     android:contentDescription="@string/app_name"
     android:scaleType="fitXY"
-    android:src="@drawable/imgcircular" />
+    android:src="@drawable/rotate64x64" />
 
 </RelativeLayout>
