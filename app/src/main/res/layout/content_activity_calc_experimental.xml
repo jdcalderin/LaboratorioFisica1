@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutprincipal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -19,54 +20,60 @@
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:text="@string/medExperimental"
-            android:textSize="@dimen/titulos"/>
+            android:textAlignment="center"
+            android:textSize="@dimen/titulos" />
 
         <TextView
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:text="@string/longObject"
+            android:textAlignment="center"
             android:textSize="@dimen/etiquetas" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/txtLongitud"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
             android:textAlignment="center"
-            android:textSize="@dimen/textos"/>
+            android:textSize="@dimen/textos" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:text="@string/tiempo"
+            android:textAlignment="center"
             android:textSize="@dimen/etiquetas" />
+
+
+        <EditText
+            android:id="@+id/LblTiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="@dimen/textos" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="0.0000 s"
-            android:textAlignment="center"
-            android:textSize="@dimen/textos"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
             android:text="@string/velexperimental"
+            android:textAlignment="center"
             android:textSize="@dimen/etiquetas" />
 
-        <TextView
+
+        <EditText
+            android:id="@+id/LblResultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="0.0000 m/s"
+            android:ems="10"
+            android:inputType="number"
             android:textAlignment="center"
             android:textSize="@dimen/textos" />
 
