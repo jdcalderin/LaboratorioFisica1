@@ -2,7 +2,7 @@ package com.tesis.orca.laboratoriofisica1;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
+
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -14,6 +14,11 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import android.app.Activity;
+import android.content.Context;
+import android.hardware.SensorEventListener;
+import android.os.SystemClock;
 
 import java.util.Date;
 
@@ -55,7 +60,7 @@ public class Activity_calc_experimental extends AppCompatActivity {
         txtLongitud=(EditText)findViewById(R.id.txtLongitud);
         lblResultado=(EditText) findViewById(R.id.LblResultado);
         LblTiempo=(EditText) findViewById(R.id.LblTiempo);
-        sm.registerListener(this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
+        sm.registerListener((SensorEventListener) this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
     }
 
 

@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class Activity_result_teorico extends AppCompatActivity {
@@ -55,6 +56,21 @@ public class Activity_result_teorico extends AppCompatActivity {
 
         tvResultado.setText(String.format("%.5f", fResultado) + " m/s");
 
+    }
+
+    public void IrVelExperimental(View view) {
+        Intent intent = new Intent(this, Activity_calc_experimental.class);
+
+        /*
+        EditText etRadio = (EditText) findViewById(R.id.etRadio);
+        EditText etPeriodo = (EditText) findViewById(R.id.etPeriodo);
+        String strRadio = etRadio.getText().toString();
+
+        String strPeriodo = etPeriodo.getText().toString();
+        intent.putExtra(strValorRadio, strRadio);
+        intent.putExtra(strValorPeriodo, strPeriodo);
+        */
+        startActivity(intent);
     }
 
 }
