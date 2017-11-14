@@ -22,7 +22,7 @@ import android.os.SystemClock;
 
 import java.util.Date;
 
-public class Activity_calc_experimental extends AppCompatActivity {
+public class Activity_calc_experimental extends AppCompatActivity implements SensorEventListener{
 
     public EditText txtLongitud;
     public EditText lblResultado,LblTiempo;
@@ -60,7 +60,8 @@ public class Activity_calc_experimental extends AppCompatActivity {
         txtLongitud=(EditText)findViewById(R.id.txtLongitud);
         lblResultado=(EditText) findViewById(R.id.LblResultado);
         LblTiempo=(EditText) findViewById(R.id.LblTiempo);
-        sm.registerListener((SensorEventListener) this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
+        sm.registerListener(this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
+        //sm.registerListener((SensorEventListener) this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
     }
 
 

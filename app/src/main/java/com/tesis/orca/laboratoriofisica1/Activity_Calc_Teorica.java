@@ -29,6 +29,11 @@ public class Activity_Calc_Teorica extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Intent intent = getIntent();
+
+
+        String strValorteorico = intent.getStringExtra(MainActivity.strValorTeorico);
     }
 
     public void Ircalcular(View view) {

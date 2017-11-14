@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String EXTRA_MESSAGE = "com.example.myfirstapp.MESSAGE";
     public static final String strValorRadio="1";
     public static final String strValorPeriodo="2";
+    public static final String strValorTeorico="3";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

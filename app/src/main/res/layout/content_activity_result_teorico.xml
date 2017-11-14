@@ -63,8 +63,9 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="IrVelExperimental"
+            android:text="@string/irMedExperimental"
             android:textAlignment="center"
-            android:textSize="@dimen/botones"
-            android:text="@string/irMedExperimental" />
+            android:textSize="@dimen/botones" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
