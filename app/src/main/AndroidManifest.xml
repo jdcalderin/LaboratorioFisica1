@@ -25,13 +25,16 @@
         <activity
             android:name=".Activity_Calc_Teorica"
             android:label="@string/title_activity_result_teorico"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity_result_teorico"
             android:label="@string/title_activity_result_teorico"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".WelcomeActivity" />
+        <activity
+            android:name=".Activity_calc_experimental"
+            android:label="@string/title_activity_calc_experimental"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".WelcomeActivity"></activity>
     </application>
 
 </manifest>
