@@ -61,14 +61,9 @@ public class Activity_result_teorico extends AppCompatActivity {
 
     public void IrVelExperimental(View view) {
         Intent intent = new Intent(this, Activity_calc_experimental.class);
-
         TextView tvResultado= (TextView) findViewById(R.id.tvResultado);
         String strValorteorico = tvResultado.getText().toString();
-
-
         intent.putExtra(strValorTeorico, strValorteorico);
-
-
         startActivity(intent);
     }
 

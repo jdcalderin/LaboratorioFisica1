@@ -34,6 +34,10 @@
         <activity
             android:name=".Activity_calc_experimental"
             android:label="@string/title_activity_calc_experimental"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity_calc_error_relativo"
+            android:label="@string/title_activity_calc_error_relativo"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

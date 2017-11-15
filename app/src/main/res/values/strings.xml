@@ -52,6 +52,7 @@
     <string name="title_activity__calc__teorica">Activity_Calc_Teorica</string>
     <string name="title_activity_result_teorico">Activity_result_teorico</string>
     <string name="title_activity_calc_experimental">Activity_calc_experimental</string>
+    <string name="title_activity_calc_error_relativo">Activity_calc_error_relativo</string>
 
 
 </resources>

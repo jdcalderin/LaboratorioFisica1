@@ -25,7 +25,7 @@ import java.util.Date;
 public class Activity_calc_experimental extends AppCompatActivity implements SensorEventListener{
 
     public EditText txtLongitud;
-    public EditText lblResultado,LblTiempo;
+    public TextView lblResultado,LblTiempo;
     SensorManager sm;
     Sensor sensor;
 
@@ -58,8 +58,8 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
         sm=(SensorManager)getSystemService(SENSOR_SERVICE);
         sensor=sm.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         txtLongitud=(EditText)findViewById(R.id.txtLongitud);
-        lblResultado=(EditText) findViewById(R.id.LblResultado);
-        LblTiempo=(EditText) findViewById(R.id.LblTiempo);
+        lblResultado=(TextView) findViewById(R.id.LblResultado);
+        LblTiempo=(TextView) findViewById(R.id.LblTiempo);
         sm.registerListener(this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
         //sm.registerListener((SensorEventListener) this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
     }
