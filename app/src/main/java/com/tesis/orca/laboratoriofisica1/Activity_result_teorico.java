@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class Activity_result_teorico extends AppCompatActivity {
 
     public static final String strValorTeorico = "3";
+    public String strResultado="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +36,7 @@ public class Activity_result_teorico extends AppCompatActivity {
 
 
     public void calcular(){
+
         Intent intent = getIntent();
         Intent intent2 = getIntent();
 
@@ -46,7 +48,7 @@ public class Activity_result_teorico extends AppCompatActivity {
         float fPeriodo=Float.parseFloat(strPeriodo);
         float p=Float.parseFloat("3.141592653589793");
         float fResultado=(2*p*fRadio)/fPeriodo;
-
+        strResultado= fResultado +"";
         // Capture the layout's TextView and set the string as its text
         TextView tvRadio = (TextView) findViewById(R.id.tvRadio);
         TextView tvPeriodo = (TextView) findViewById(R.id.tvPeriodo);
@@ -61,9 +63,8 @@ public class Activity_result_teorico extends AppCompatActivity {
 
     public void IrVelExperimental(View view) {
         Intent intent = new Intent(this, Activity_calc_experimental.class);
-        TextView tvResultado= (TextView) findViewById(R.id.tvResultado);
-        String strValorteorico = tvResultado.getText().toString();
-        intent.putExtra(strValorTeorico, strValorteorico);
+
+        intent.putExtra(strValorTeorico, strResultado);
         startActivity(intent);
     }
 

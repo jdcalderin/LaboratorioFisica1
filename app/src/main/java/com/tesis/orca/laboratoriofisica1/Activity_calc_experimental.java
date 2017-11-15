@@ -1,5 +1,6 @@
 package com.tesis.orca.laboratoriofisica1;
 
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 
@@ -35,6 +36,13 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
 
     long time;
 
+
+    public static final String strValorTeorico = "3";
+    public static final String strValorExperimental = "4";
+
+    public String strValorteorico="";
+    String strValorxperimental="";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +69,12 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
         lblResultado=(TextView) findViewById(R.id.LblResultado);
         LblTiempo=(TextView) findViewById(R.id.LblTiempo);
         sm.registerListener(this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
-        //sm.registerListener((SensorEventListener) this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
+
+
+        Intent intent = getIntent();
+
+
+        strValorteorico = intent.getStringExtra(MainActivity.strValorTeorico);
     }
 
 
@@ -82,6 +95,7 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
             Double resultado = Longitud / tiempo;
             lblResultado.setText(String.format("%.5f", resultado) + " m/s");
             LblTiempo.setText(String.format("%.4f", tiempo) + " s");
+            strValorxperimental= resultado+ "";
         }
         else
         {
@@ -120,8 +134,21 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
         }
     }
 
+
+
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+    }
+
+    public void IrErrRelativo(View view) {
+        Intent intent = new Intent(this, Activity_calc_error_relativo.class);
+
+
+        intent.putExtra(strValorTeorico, strValorteorico);
+        intent.putExtra(strValorExperimental, strValorxperimental);
+
+        startActivity(intent);
     }
 }

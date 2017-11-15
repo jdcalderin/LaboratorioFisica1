@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String strValorRadio="1";
     public static final String strValorPeriodo="2";
     public static final String strValorTeorico="3";
-
+    public static final String strValorExperimental="4";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
