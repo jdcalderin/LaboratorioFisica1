@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logoorca"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logoorca"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -24,20 +24,20 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity_Calc_Teorica"
-            android:label="@string/title_activity_result_teorico"
+            android:label="@string/calcTeorica"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity_result_teorico"
-            android:label="@string/title_activity_result_teorico"
+            android:label="@string/velTeorica"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".WelcomeActivity" />
         <activity
             android:name=".Activity_calc_experimental"
-            android:label="@string/title_activity_calc_experimental"
+            android:label="@string/medExperimental"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity_calc_error_relativo"
-            android:label="@string/title_activity_calc_error_relativo"
+            android:label="@string/errRelativo"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

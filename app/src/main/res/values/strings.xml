@@ -12,6 +12,7 @@
     <string name="periodo">Ingrese el periodo</string>
     <string name="calcular">Calcular</string>
     <string name="velTeorica">Velocidad teorica</string>
+    <string name="despeje">Despeje de formula</string>
     <string name="irMedExperimental">Ir a Medición Experimental</string>
     <string name="medExperimental">Velocidad experimental</string>
     <string name="longObject">Longitud del objeto</string>
@@ -20,7 +21,7 @@
     <string name="velexperimental">Velocidad experimental</string>
     <string name="irErrRelativo">ir a error relativo</string>
     <string name="errRelativo">Error relativo</string>
-    <string name="expErrRelativo">Exprecion E.R</string>
+    <string name="expErrRelativo">Expresion E.R</string>
     <string name="msgErrorRrelativo">El error relativo es:</string>
 
 

@@ -16,20 +16,13 @@
         tools:layout_editor_absoluteY="8dp">
 
         <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="@string/calcTeorica"
-            android:textSize="@dimen/titulos"/>
-
-        <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
+            android:paddingTop="20dp"
             android:text="@string/radio"
-            android:textSize="@dimen/etiquetas"/>
+            android:textAlignment="center"
+            android:textSize="@dimen/etiquetas" />
 
         <EditText
             android:id="@+id/etRadio"

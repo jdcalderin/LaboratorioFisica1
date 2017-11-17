@@ -1,5 +1,14 @@
 package com.tesis.orca.laboratoriofisica1;
 
+
+/*
+Autor: Carlos orrego
+Fecha de creacion: 2017/11/12
+Descripcion: actividad donde se calcula la velocidad experimental con base a la longitud del objeto a medir y el tiempo que tarda en pasar cerca del sensor de proximidad
+
+ */
+
+
 import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -25,23 +34,27 @@ import java.util.Date;
 
 public class Activity_calc_experimental extends AppCompatActivity implements SensorEventListener{
 
+   //se instancian los componentes
     public EditText txtLongitud;
     public TextView lblResultado,LblTiempo;
     SensorManager sm;
     Sensor sensor;
-
-    private static Date tinicial = new Date();
-    private static Date  tfinal  = new Date()  ;
     LinearLayout principalLayout;
 
-    long time;
+    private static Date tinicial = new Date(); //varaible para capturar la hora en que se detecto un objeto cerca del sensor
+    private static Date  tfinal  = new Date()  ;//varaible para capturar la hora en que se dejo de detectar un objeto cerca del sensor
+    long time; //variable para almacenar el tiempo que se tardo un objeto cerca del sensor de proximidad
 
 
-    public static final String strValorTeorico = "3";
-    public static final String strValorExperimental = "4";
 
-    public String strValorteorico="";
-    String strValorxperimental="";
+
+
+
+    public static final String strValorTeorico = "3"; //id para el parametro del valor teorico
+    public static final String strValorExperimental = "4"; // id para el parametro del vlor experimental
+
+    public String strValorteorico=""; //variable para almacenar el valor teorico
+    public String strValorxperimental=""; //variable para almacenar el valor experimental
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,10 +72,9 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
             }
         });
 
+
+        //se instancian los componentes de la actividad
         principalLayout = (LinearLayout)findViewById(R.id.layoutprincipal);
-
-
-
         sm=(SensorManager)getSystemService(SENSOR_SERVICE);
         sensor=sm.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         txtLongitud=(EditText)findViewById(R.id.txtLongitud);
@@ -70,16 +82,14 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
         LblTiempo=(TextView) findViewById(R.id.LblTiempo);
         sm.registerListener(this,sensor,SensorManager.SENSOR_DELAY_NORMAL);
 
-
+        //se captura el parametro del valor teorico de la actividad anterior
         Intent intent = getIntent();
-
-
         strValorteorico = intent.getStringExtra(MainActivity.strValorTeorico);
     }
 
-
+    //funcion para calcular la velocidad del objeto
     public void Calcular(){
-
+        //se valida que el usuario ingrese una longitud
         Float Longitud;
         if (txtLongitud.getText().length()==0){
             Longitud=Float.parseFloat("0");
@@ -88,25 +98,33 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
             Longitud = Float.parseFloat(txtLongitud.getText().toString());
         }
 
-
+        //se calcula la diferencia entre la hora inicial y final en que se detecto un objeto sobre el sessor
         long diffInMs = tfinal.getTime() - tinicial.getTime();
+        //se convierte la diferencia a segundo
         Double tiempo = diffInMs / 1000.0;
+
+        //si la longitud del objeto es mayor a cero se procedo a realizar el calculo de velocidad
         if (Longitud>0) {
             Double resultado = Longitud / tiempo;
+            //se muestra en pantalla el resultado y el tiempo
             lblResultado.setText(String.format("%.5f", resultado) + " m/s");
             LblTiempo.setText(String.format("%.4f", tiempo) + " s");
-            strValorxperimental= resultado+ "";
+
+            strValorxperimental= resultado+ "";// se almacena el resultado en una variable de texto para enviarlo como parametro
         }
         else
         {
+            //si no se ingreso una longitud se muestra un mensaje indicando que se debe ingresar una longitud
             Toast.makeText(this,"La longid debe ser mayor a 0 'cero'",Toast.LENGTH_SHORT).show();
         }
 
 
     }
 
-    public void Iniciar(){
 
+    //metodo que se llama cuando se detecta un objeto sobre el sensor
+    public void Iniciar(){
+        //se captura el momento en que se detecta un objeto sobre el sensor
         this.tinicial = new Date();
 
         lblResultado.setText("0.00000 m/s");
@@ -114,14 +132,20 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
         principalLayout.setBackgroundColor(getResources().getColor(R.color.colorAccent));
 
     }
-
+    //metodo que se llama cuando se deja de detectar un objeto sobre un objeto
     public void Finalizar(){
+
+        //se captura el momento en que se deja de detectar el objeto
         this.tfinal = new Date();
 
         this.Calcular();
         principalLayout.setBackgroundColor(getResources().getColor(R.color.normal));
     }
 
+
+    /**
+     * se sobrecarga el metodo del sensor de proximidad para inbocar nuestros eventos
+     */
     @Override
     public void onSensorChanged(SensorEvent event) {
 
@@ -142,12 +166,15 @@ public class Activity_calc_experimental extends AppCompatActivity implements Sen
 
     }
 
+    /**
+     * metodo en el que se llama la actividad para calcular el error relativo
+     */
     public void IrErrRelativo(View view) {
         Intent intent = new Intent(this, Activity_calc_error_relativo.class);
 
 
-        intent.putExtra(strValorTeorico, strValorteorico);
-        intent.putExtra(strValorExperimental, strValorxperimental);
+        intent.putExtra(strValorTeorico, strValorteorico);// se envia como parametro el valor teorico
+        intent.putExtra(strValorExperimental, strValorxperimental); // se envia como parametro el valor teorico
 
         startActivity(intent);
     }
