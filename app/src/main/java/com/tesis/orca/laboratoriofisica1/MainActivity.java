@@ -1,5 +1,17 @@
 package com.tesis.orca.laboratoriofisica1;
 
+
+/*
+
+Nombre archivo: MainActivity.java
+Autor: Carlos Orrego, Jose Calderin,Felipe Duque.
+Fecha de creacion: 2017/11/12.
+Descripcion (Que es):     Clase principal (inicio)
+Descripcion (Que hace):   Contiene los enlaces a los demas menus embebidos  en el aplicativo
+
+ */
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;

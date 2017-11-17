@@ -1,7 +1,14 @@
 package com.tesis.orca.laboratoriofisica1;
 
-/**
- * Created by josedaniel on 12/11/17.
+/*
+
+Nombre archivo: PrefManager.java
+Autor: Carlos Orrego, Jose Calderin,Felipe Duque.
+Fecha de creacion: 2017/11/12.
+Descripcion (Que es):     Clase encargada, de almancenar en memoria
+Descripcion (Que hace):   Si es requerido almacenar la primera vez que se abre el menu
+                          introductorio, se puede guardar la primera vez que se almacena
+
  */
 
 import android.content.Context;

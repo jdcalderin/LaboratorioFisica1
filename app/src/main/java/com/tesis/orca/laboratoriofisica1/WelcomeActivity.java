@@ -1,5 +1,16 @@
 package com.tesis.orca.laboratoriofisica1;
 
+/*
+
+Nombre archivo: WelcomeActivity.java
+Autor: Carlos Orrego, Jose Calderin,Felipe Duque.
+Fecha de creacion: 2017/11/12.
+Descripcion (Que es):     clase encargada de crear la interfaz de introcuccion
+Descripcion (Que hace):   Crea los componentes visibles al ingresar a la opcion principal MCU,
+                          es decir cada una de las tarjetas.
+
+ */
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;

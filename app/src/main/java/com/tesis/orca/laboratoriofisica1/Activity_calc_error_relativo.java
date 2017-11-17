@@ -1,8 +1,13 @@
 package com.tesis.orca.laboratoriofisica1;
 /*
-Autor: Carlos orrego
-Fecha de creacion: 2017/11/12
-Descripcion: actividad donde se calcula el porcentaje de error relativo
+Nombre archivo: Activity_Cal_error_relativo.java
+
+
+Autor: Carlos Orrego, Jose Calderin,Felipe Duque.
+Fecha de creacion: 2017/11/12.
+Descripcion (Que es): Clase  con logica encargada de calcular el porcentaje de error.
+Descripcion (Que hace): Actividad donde se calcula el porcentaje de error relativo tomando los
+            valores  que provienden del calculo experimental y el resultado teorico.
 
  */
 
@@ -15,6 +20,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+/**
+ *
+ */
 public class Activity_calc_error_relativo extends AppCompatActivity {
 
     @Override

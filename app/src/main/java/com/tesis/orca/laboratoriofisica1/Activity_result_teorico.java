@@ -2,11 +2,17 @@ package com.tesis.orca.laboratoriofisica1;
 
 
 /*
-Autor: Carlos orrego
-Fecha de creacion: 2017/11/12
-Descripcion: actividad donde se calcula la velocidad teorica y se muestra la exprecion
+
+Nombre archivo: Activity_result_teorico.java
+Autor: Carlos Orrego, Jose Calderin,Felipe Duque.
+Fecha de creacion: 2017/11/12.
+Descripcion (Que es):     Clase encargada de realizar el calculo de la velocidad
+Descripcion (Que hace):   Actividad donde se calcula la velocidad teorica y se muestra la expresion.
 
  */
+
+
+
 
 
 

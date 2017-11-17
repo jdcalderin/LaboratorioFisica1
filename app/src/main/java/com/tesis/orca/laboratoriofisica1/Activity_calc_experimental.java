@@ -2,9 +2,15 @@ package com.tesis.orca.laboratoriofisica1;
 
 
 /*
-Autor: Carlos orrego
-Fecha de creacion: 2017/11/12
-Descripcion: actividad donde se calcula la velocidad experimental con base a la longitud del objeto a medir y el tiempo que tarda en pasar cerca del sensor de proximidad
+
+Nombre archivo: Activity_calc_experimental.java
+Autor: Carlos Orrego, Jose Calderin,Felipe Duque.
+Fecha de creacion: 2017/11/12.
+Descripcion (Que es):    Clase encargada de calcular calcular la velocidad experimental.
+Descripcion (Que hace):  Actividad donde se calcula la velocidad experimental con base a la longitud del objeto a medir
+                         y el tiempo que tarda en pasar cerca del sensor de proximidad
+
+
 
  */
 

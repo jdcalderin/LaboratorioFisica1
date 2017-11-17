@@ -1,5 +1,16 @@
 package com.tesis.orca.laboratoriofisica1;
 
+
+/*
+
+Nombre archivo: SplashActivity.java
+Autor: Carlos Orrego, Jose Calderin,Felipe Duque.
+Fecha de creacion: 2017/11/12.
+Descripcion (Que es):     Clase encargada de crear la interfaz que de despliega al abrir el aplicativo
+Descripcion (Que hace):   habilita un timer, que muestra una imagen por unos segundos, para luego
+                          darle paso a la vista principal
+
+ */
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
